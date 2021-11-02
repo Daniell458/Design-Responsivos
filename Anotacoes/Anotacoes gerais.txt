@@ -1,0 +1,15 @@
+    Para criarmos designs responsívos para que ele se adapte a diferentes tamanhos de telas, devemos conhecer as unidades
+de medida que nos permitem configurar o tamanho dos elementos em nosso código, através disso podemos deixar nossa página responsíva para que em determinadas telas ela funcione de maneira diferente, com fluidez e melhor eficiência.
+    As unidades de medida mais utilizadas são: "px" pixels, "%" percentual, "em" proporicional.     Cada uma delas age
+de forma diferente tendo cada uma um conceito porém sendo todas universais, apenas sendo alguma delas melhor utilizável em tal momento do que as demais.
+
+    É possível definir um tamanho máximo de tela para que tal elemento se comporte de tal maneira, fazemos isso através
+da propriedade do CSS chamada "max-width" com ela nós podemos colocar um tamanho máximo que tal elemento pode atingir por exemplo podemos dizer que determinado elemento só possa ir até 1280px que é a largura do FHD, pra isso dizemos no CSS: ".elemento-qualquer {  max-width: 1280px  }" sendo assim se a página se esticar mais do que 1280px o elemento em questão não ultrapassará este tamanho.
+    Em contro-versa, temos a possibilidade de definir um tamnaho mínimo para um elemento, para que tal não diminua
+abaixo do valor definido, para isso usamos a propriedade do CSS "min-width" esta funciona da mesma maneira que a outra acima, com diferença é claro que esta define um tamanho mínimo para o conteúdo/elemento em questão, usamos a seguinte sintaxe: ".elemento-qualquer {  min-width: 768px }"
+
+    Quando estamos trabalhando com desings responsívos, existe outra ferramenta muito importante que são as 
+"media queries" com elas nós podemos definir um tamanho para a tela e por meio dessa definição caso ela seja verdadeira podemos mapear novos código CSS para determinados tamanhos de tela, podemos por exemplo definir um tamanho maximo e se a tela for até aquela definição o código será executado, segue exemplo:
+@media (max-width: 768px) {     .elemento-qualquer { 'aqui vai o código mapeado' }  };
+    No exemplo acima estamos dizendo que se a tela em que a página está sendo exibida tiver o tamanho de até 768px o
+código será executado, caso seja maior precisamos criar outras linhas de códigos específicas para telas maiores.
