@@ -1,0 +1,24 @@
+    Um grande conceito do desenvolvimento é sempre pensar em desenvolver o "mobile-first" (mobile primeiro) ou
+"desktop-first" (computador primeiro) fazendo isso nós tiramos muitas barreiras que poderiam vir a aparecer depois do site já desenvolvido mas muita atenção na hora de escolher qual focar, cada um possui vantagens e desvantagens.
+    Alguns editores de código como VScode, Atom, SublimeTxt etc... possuem um plug-in chamado "emmet", este serve para
+facilitar a vida do programador na hora da codificação, podemos escrever diversas tags em uma unica linha separadas apenas pelos operadores que vão caracterizar que tag é filho de quem, quando a mesma tag será multiplicada e etc, os operadores são os seguintes:
+('>' este inidica que a proxima tag será filha direta da anterior), ('+' este indica que a proxima tag não e filha mas sim irmâ da anterior *mesma hierarquia sendo tags diferentes*), ('*' o asterísco é usado para multilplicar a proxima tag, exemplo: se queremos 4 tags <li> depois de uma <ul> fazermos = "ul>li*4").
+    Podemos também ao mesmo tempo que crimaos novos elementos já crialos com determinadas classes, para isso usamos o:
+('.' faz com que crie uma classe para o elemento anterior).
+    *Obs: Podemos ainda delimitar um nível de elementos para por exemplo quando terminarmos de colocarmos todas as tags 
+de determianda estrutura mas ainda quisermos colocar uma outra que vá fora dessa estrutura, fazemos essa limitação através de "()" parênteses.      Exemplo: todo conteúdo que colocarmos dentro dos parênteses ficará em um grupo que vai fazendo toda sua hierarquia, se colocarmos outro elemento fora desses parênteses ele será irmão direto do ultimo elemento antes do parênteses, isso faz com que não percamos o controle dessa funcionalidade.
+
+    Quando falamos de medidas temos diversos tipos para se usar na hora de fazer a codificação do nosso projeto, detre
+as opções temos: px, %, em, rem... as duas primeiras são bem conhecidas que são pixels e porcentagem, já as duas ultimas tem algumas características que as fazem especiais para serem usadas principalmente se tratando de designs responsivos.
+    A primeira é a ("em" *efêmero*) esta é uma unidade que se baseia no tamanho do font-size do elemento pai do da tag em
+que estamos trabalhando, exemplo: se temos a seguinte estrutura = div>h1 e estamos trabalhando no tamanho de <h1>, se usarmos a unidade de medida "em" nós estamos nos referindo ao tamanho da fonte padrão da tag <div>, vale ressaltar que nós damos como valor números racionais, sendo assim se dermos 1.0em dizemos que queremos que o <h1> tenha 100% do tamanho da tag <div>, se dissermos 1.50em dizemos que queremos 150% do tamanho da fonte da tag <div>.
+    Já no caso da unidade ("rem" *root-efêmero*) ela segue o mesmo conceito da anterior só que em vez de se basear no 
+tamanho da fonte da tag pai, ela se baseia na tag global ou seja a maior tag de todas que no caso é a tag <html> por padrão esta tag tem o tamanho de 16px, mas podemos mudar isso via CSS para adaptar todo nosso projeto.
+
+    É possível criarmos variáveis no CSS, para isso usamos antes do nome da variável dois simbolos de hífen "--" depois 
+desses simbolos damos o nome da variável e depois de ":" damos o valor da mesma finalizando com ";".
+    *Obs: Para que o CSS não detecte essas variáveis como erros, é necessário colocalas dentro de um seletor CSS,
+podemos fazer isso usando o seletor raiz que é o ".html{}" mas existe ainda um mais forte que o próprio que é o 
+":root{}".
+    **Obs: Para chamarmos os valores dessas variáveis depois é necessário escrever o seguinte código:
+var(--nome-da-variavel);
